@@ -1,0 +1,450 @@
+* {
+    font-size: 14px;
+}
+
+.imagen_logo {
+    width: 150px;
+}
+
+.contenedor_nav {
+    background-color: #171717 !important;
+}
+
+.contenedor_nav_footer {
+    background-color: #1e1d1d9e !important;
+    padding: 20px 0 20px 0;
+    border-top: 3px solid #938f8f67;
+}
+
+.nav-link {
+    font-size: 1.5rem !important;
+}
+
+.contenedor-grid-productos {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+        "prod-1 prod-1 prod-2 prod-2"
+        "prod-1 prod-1 prod-2 prod-2"
+        "prod-3 prod-3 prod-4 prod-4"
+        "prod-3 prod-3 prod-4 prod-4"
+    ;
+    justify-items: center;
+    gap: 10px;
+    /* margin: 10px 0 15px 0; */
+    background-image: url('../assets/imagenes/mostrador-pasteleria2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+
+}
+
+
+
+
+.producto-uno {
+    grid-area: prod-1;
+    background-color: #383434b8;
+    /* background-color: #f0e2c7; */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.producto-dos {
+    grid-area: prod-2;
+    background-color: #383434b8;
+    /* background-color: #e35f85; */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.producto-tres {
+    grid-area: prod-3;
+    background-color: #383434b8;
+    /* background-color: #bbd1c4; */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.producto-cuatro {
+    grid-area: prod-4;
+    background-color: #383434b8;
+    /* background-color: #FFB6C1; */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.card-productos {
+    width: 300px;
+    border-radius: 20px;
+}
+
+.productos-home {
+    width: 250px;
+    border-radius: 30px;
+}
+
+.titulo-producto {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.titulo-contacto {
+    font-size: 1.5rem;
+        font-weight: 700;
+}
+
+.btn-secondary {
+    margin-top: 10px;
+}
+
+.img-descripcion-productos {
+    height: 60%;
+    width: 400px;
+    border: #fff solid;
+    border-radius: 10px;
+}
+
+.p-descrispion-productos {
+    font-size: 2.5rem;
+    margin: 10px 20px 10px 20px;
+    color: grey;
+}
+
+.contenedor-descripcion {
+    margin: 20px 0 20px 0;
+}
+
+.articulo-producto {
+    height: auto;
+}
+
+
+
+.p-titulo {
+    font-size: 2rem;
+}
+
+.mapa {
+    width: 400px;
+    border-radius: 20px;
+}
+
+.form {
+    width: 350px;
+}
+
+
+
+.fab {
+    font-size: 50px;
+    margin: 0 15px 0 15px;
+    color: rgb(225, 221, 221);
+}
+
+.btn-hover:hover {
+    background-color: rgba(207, 201, 201, 0.77) !important;
+    /* Cambia el color de fondo al pasar el cursor sobre el botón */
+    color: rgb(6, 6, 6) !important;
+    border-color: black !important;
+    /* Cambia el color del texto al pasar el cursor sobre el botón */
+    /* Agrega otros estilos de "hover" según tus preferencias */
+}
+
+
+.bg-pagina {
+    background-color: #d5d3d35c;
+}
+
+.form-pagina {
+    width: 500px;
+}
+
+.contact-subtitles {
+    font-weight: 900;
+}
+
+.p-nosotros {
+    max-width: 500px;
+}
+
+
+/* body,
+html {
+    height: 100%;
+} */
+
+
+/* @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @       MEDIA QUERIES      @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @*/
+
+
+
+/* @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ */
+/* @ @ @ @ @ @ @ @ @ @       Estilos para teléfonos pequeños y dispositivos más grandes   @ @ @ @ @ @ @ @ @ @ @*/
+/* @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ */
+
+@media (max-width: 576px) {
+    .nav-link {
+        font-size: 1rem !important;
+    }
+
+    .contenedor-grid-productos {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+            "prod-1 prod-1 prod-1 prod-1"
+            "prod-2 prod-2 prod-2 prod-2"
+            "prod-3 prod-3 prod-3 prod-3"
+            "prod-4 prod-4 prod-4 prod-4"
+        ;
+        gap: 10px;
+
+
+    }
+
+    .contenedor-descripcion {
+        display: none;
+    }
+
+    .navbar>.container-fluid {
+        display: flex;
+        flex-wrap: inherit;
+        align-items: center;
+        justify-content: space-around !important;
+    }
+
+    .form-pagina {
+        width: 300px;
+    }
+
+}
+
+
+/* @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ */
+/* @ @ @ @ @ @ @ @ @ @            Estilos para tablets y dispositivos más grandes         @ @ @ @ @ @ @ @ @ @ @*/
+/* @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ */
+
+
+
+@media (min-width: 578px) {
+    .nav-link {
+        font-size: 1rem !important;
+    }
+
+    .uno {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        background-color: #f0e2c75a;
+        color: #fff;
+        padding: 20px;
+        align-items: center;
+
+
+    }
+
+    .dos {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        background-color: #e35f8452;
+        color: #fff;
+        padding: 20px;
+        align-items: center;
+    }
+
+    .tres {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        background-color: #bbd1c45d;
+        color: #fff;
+        padding: 20px;
+        align-items: center;
+    }
+
+    .cuatro {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        background-color: #ffb6c14e;
+        color: #fff;
+        padding: 20px;
+        align-items: center;
+    }
+
+    .navbar>.container-fluid {
+        display: flex;
+        flex-wrap: inherit;
+        align-items: center;
+        justify-content: space-around !important;
+    }
+
+    .form-pagina {
+        width: 500px;
+    }
+}
+
+
+
+/* @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ */
+/* @ @ @ @ @ @ @ @ @ @          Estilos dispositivos medianos y escritorios pequeños      @ @ @ @ @ @ @ @ @ @ @*/
+/* @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ */
+
+
+@media (min-width: 992px) {
+    .navBar {
+        display: flex !important;
+        justify-content: space-around !important;
+    }
+
+    .nav-link {
+        font-size: 1.8rem !important;
+    }
+
+    .imagen_logo {
+        width: 180px;
+    }
+
+    a.nav-link {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .uno {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        background-color: #f0e2c75a;
+        color: #fff;
+        padding: 20px;
+        align-items: center;
+
+
+    }
+
+    .dos {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        background-color: #e35f8452;
+        color: #fff;
+        padding: 20px;
+        align-items: center;
+    }
+
+    .tres {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        background-color: #bbd1c45d;
+        color: #fff;
+        padding: 20px;
+        align-items: center;
+    }
+
+    .cuatro {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        background-color: #ffb6c14e;
+        color: #fff;
+        padding: 20px;
+        align-items: center;
+    }
+
+    .col-lg {
+        flex: 1 0 0%;
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    .navbar>.container-fluid {
+        display: flex;
+        flex-wrap: inherit;
+        align-items: center;
+        justify-content: space-around !important;
+    }
+
+
+}
+
+
+
+/* @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ */
+/* @ @ @ @ @ @ @ @ @ @                          Estilos para PCs                          @ @ @ @ @ @ @ @ @ @ @*/
+/* @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ */
+
+
+@media (min-width: 1200px) {
+    .contenedor-grid-productos {
+
+        padding-top: 10px;
+        padding-bottom: 10px;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+            "prod-1 prod-2 prod-3 prod-4"
+            "prod-1 prod-2 prod-3 prod-4"
+            "prod-1 prod-2 prod-3 prod-4"
+            "prod-1 prod-2 prod-3 prod-4"
+        ;
+        gap: 10px;
+    }
+
+    .navBar {
+        display: flex !important;
+        justify-content: flex-end !important;
+    }
+
+    .nav-link {
+        font-size: 2rem !important;
+    }
+
+    .imagen_logo {
+        width: 250px;
+    }
+
+    a.nav-link {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+
+
+    .mi-carrousel {
+        height: 850px !important;
+    }
+
+    .form-pagina {
+        width: 800px;
+    }
+}
