@@ -3,6 +3,7 @@
     font-family: 'Ubuntu', sans-serif;
 }
 
+
 .imagen_logo {
     width: 150px;
 }
@@ -95,8 +96,8 @@
 
 
 .card-productos {
-    width: 300px;
-    border-radius: 20px;
+    width: 270px;
+    border-radius: 10px;
 }
 
 .productos-home {
@@ -135,10 +136,11 @@
     margin: 20px 0 20px 0;
 }
 
+
+
 .articulo-producto {
     height: auto;
 }
-
 
 
 .p-titulo {
@@ -146,21 +148,30 @@
 }
 
 .mapa {
-    width: 400px;
+    width: 300px;
     border-radius: 20px;
 }
 
 .form {
-    width: 350px;
+    width: 300px;
 }
 
 
 
 .fab {
-    font-size: 50px;
+    font-size: 35px;
     margin: 0 15px 0 15px;
     color: rgb(225, 221, 221);
 }
+
+.fa-facebook:hover {
+    color: rgb(57, 84, 205);
+}
+
+.fa-whatsapp:hover {
+    color: rgb(27, 157, 79);
+}
+
 
 .btn-hover:hover {
     background-color: rgba(207, 201, 201, 0.77) !important;
@@ -169,12 +180,10 @@
 }
 
 
-.bg-pagina {
-    background-color: #d5d3d35c;
-}
+
 
 .form-pagina {
-    width: 500px;
+    width: 300px;
 }
 
 .contact-subtitles {
@@ -185,17 +194,30 @@
     max-width: 500px;
 }
 
+.bg-pagina {
+    background-color: #d5d3d35c;
+    position: relative;
+    padding-bottom: 10rem;
+    min-height: 100vh;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
 
 
 /* @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @       MEDIA QUERIES      @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @*/
 
 
-
 /* @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ */
-/* @ @ @ @ @ @ @ @ @ @       Estilos para teléfonos pequeños y dispositivos más grandes   @ @ @ @ @ @ @ @ @ @ @*/
+/* @ @ @ @ @ @ @ @ @ @       Estilos para teléfonos extra pequeños                        @ @ @ @ @ @ @ @ @ @ @*/
 /* @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ */
 
-@media (max-width: 576px) {
+@media (max-width: 577px) {
     .nav-link {
         font-size: 1rem !important;
     }
@@ -210,7 +232,7 @@
             "prod-3 prod-3 prod-3 prod-3"
             "prod-4 prod-4 prod-4 prod-4"
         ;
-        gap: 10px;
+        gap: 20px;
 
 
     }
@@ -227,11 +249,77 @@
     }
 
     .form-pagina {
-        width: 300px;
+        width: 200px;
     }
 
+    .mapa {
+        width: 250px;
+    }
+
+    .form {
+        width: 250px;
+
+    }
+
+    .contenedor-consulta {
+        padding: 20px 0 20px 0;
+    }
 }
 
+
+/* @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ */
+/* @ @ @ @ @ @ @ @ @ @       Estilos para teléfonos pequeños y dispositivos más grandes   @ @ @ @ @ @ @ @ @ @ @*/
+/* @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ */
+
+
+@media (min-width: 578px) and (max-width: 767px){
+    .nav-link {
+        font-size: 1rem !important;
+    }
+
+    .contenedor-grid-productos {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+            "prod-1 prod-1 prod-2 prod-2"
+            "prod-1 prod-1 prod-2 prod-2"
+            "prod-3 prod-3 prod-4 prod-4"
+            "prod-3 prod-3 prod-4 prod-4"
+        ;
+        gap: 20px;
+
+
+    }
+
+    .contenedor-descripcion {
+        display: none;
+    }
+
+    .navbar>.container-fluid {
+        display: flex;
+        flex-wrap: inherit;
+        align-items: center;
+        justify-content: space-around !important;
+    }
+
+    .form-pagina {
+        width: 200px;
+    }
+
+    .mapa {
+        width: 350px;
+    }
+
+    .form {
+        width: 350px;
+
+    }
+
+    .contenedor-consulta {
+        padding: 20px 0 20px 0;
+    }
+}
 
 /* @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ */
 /* @ @ @ @ @ @ @ @ @ @            Estilos para tablets y dispositivos más grandes         @ @ @ @ @ @ @ @ @ @ @*/
@@ -239,7 +327,7 @@
 
 
 
-@media (min-width: 578px) {
+@media (min-width: 768px) {
     .nav-link {
         font-size: 1rem !important;
     }
@@ -266,13 +354,16 @@
         text-align: center;
     }
 
-    .contenedor-consulta {
-        padding-left: 20px !important;
+
+    .mapa {
+        width: 380px;
+        border-radius: 20px;
     }
 
-    .contenedor-ubicacion {
-        padding-right: 20px !important;
+    .form {
+        width: 380px;
     }
+
 }
 
 
@@ -331,6 +422,15 @@
 
     .contenedor-ubicacion {
         padding-right: 30px !important;
+    }
+
+    .mapa {
+        width: 350px;
+        border-radius: 20px;
+    }
+
+    .form {
+        width: 350px;
     }
 
 }
