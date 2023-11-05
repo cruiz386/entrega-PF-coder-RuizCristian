@@ -61,28 +61,28 @@
         <!-- SECCION - MENU PRODUCTOS -->
 
         <section class="contenedor-grid-productos py-5">
-
+            <!-- CARD PASTELERIA - PRODUCTO 1 -->
             <div class="card-productos producto-uno">
                 <p class="titulo-producto">Pasteleria</p>
                 <img src="./assets/imagenes/producto1.jpeg" alt="macarrons" class="productos-home rounded-circle">
                 <button type="button" class="btn btn-lg bg-body-tertiary text-secondary mt-3 btn-hover">Ver
                     productos</button>
             </div>
-
+            <!-- CARD TARTAS - PRODUCTO 2 -->
             <div class="card-productos producto-dos">
                 <p class="titulo-producto">Tartas</p>
                 <img src="./assets/imagenes/producto2.jpeg" alt="tarta arandanos" class="productos-home rounded-circle">
                 <button type="button" class="btn btn-lg bg-body-tertiary text-secondary mt-3 btn-hover">Ver
                     productos</button>
             </div>
-
+            <!-- CARD TORTAS - PRODUCTO 3 -->
             <div class="card-productos producto-tres">
                 <p class="titulo-producto">Tortas</p>
                 <img src="./assets/imagenes/producto3.jpeg" alt="torta de bodas" class="productos-home rounded-circle">
                 <button type="button" class="btn btn-lg bg-body-tertiary text-secondary mt-3 btn-hover">Ver
                     productos</button>
             </div>
-
+            <!-- CARD PANADERIA - PRODUCTO 4 -->
             <div class="card-productos producto-cuatro">
                 <p class="titulo-producto">Panaderia</p>
                 <img src="./assets/imagenes/producto4.jpg" alt="panes" class="productos-home rounded-circle">
@@ -172,11 +172,10 @@
         </div>
 
 
-        <!-- CONTACTO -->
+        <!--SECCION CONTACTO -->
         <section class="container-fluid text-center section-contact d-flex justify-content-around">
 
             <div class="row my-5">
-
                 <!-- MAPA  -->
                 <div
                     class="col-sm-12 col-md-6 col-lg-6 contenedor-ubicacion d-flex justify-content-space-around flex-column align-items-center">
@@ -187,35 +186,40 @@
                         referrerpolicy="no-referrer-when-downgrade" class="mapa"></iframe>
                 </div>
 
-
                 <!-- FORMULARIO -->
                 <div
                     class="col-sm-12 col-md-6 col-lg-6 contenedor-consulta d-flex justify-content-space-around flex-column align-items-center">
                     <h2 class="contact-subtitles">Contanos que necesitas:</h2>
                     <form action="procesar.php" method="POST" class="form">
+
                         <div class="form-group">
-                            <label for="nombre">Nombre:</label>
-                            <input type="text" class="form-control" id="nombre" name="nombre" maxlength="50" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email:</label>
-                            <input type="email" class="form-control" id="email" name="email" maxlength="50" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="nombre">Telefono:</label>
-                            <input type="number" class="form-control" id="Telefono" maxlength="10" name="Telefono"
-                                required>
+                            <label for="nombre" class="text-form">Nombre:</label>
+                            <input type="text" placeholder="Decinos tu nombre" class="form-control" id="nombre"
+                                name="nombre" maxlength="50" required>
                         </div>
 
                         <div class="form-group">
-                            <label for="mensaje">Contanos que necesitas:</label>
-                            <textarea class="form-control" id="mensaje" name="mensaje" rows="4" maxlength="500"
-                                required></textarea>
+                            <label for="email" class="text-form">Email:</label>
+                            <input type="email" placeholder="Dejanos tu eMail" class="form-control" id="email"
+                                name="email" maxlength="50" required>
                         </div>
+
+                        <div class="form-group">
+                            <label for="nombre" class="text-form">Telefono:</label>
+                            <input type="tel" pattern="[0-9]{1,10}" maxlength="10"
+                                placeholder="Telefono - ej:3516123546" class="form-control" id="Telefono" maxlength="10"
+                                name="Telefono" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mensaje" class="text-form">Contanos que necesitas:</label>
+                            <textarea class="form-control" id="mensaje" name="mensaje" rows="4" maxlength="500"
+                                placeholder="Contanos que necesitas y nos pondremos en contacto!" required></textarea>
+                        </div>
+
                         <button type="submit" class="btn btn-secondary btn-lg">Enviar</button>
                     </form>
                 </div>
-
 
             </div>
         </section>
@@ -224,18 +228,18 @@
 
     <!-- FOOTER -->
     <footer class="footer">
-    
+
         <nav class="navbar navbar-dark bg-dark fixed-bottom">
             <div class="container-fluid pt-2 pb-2">
                 <a class="nav-link active text-light" aria-current="page" href="./index.html">Anice</a>
                 <a href="https://www.facebook.com/tupagina" target="_blank">
                     <i class="fab fa-facebook"></i>
                 </a>
-    
+
                 <a href="https://api.whatsapp.com/send?phone=TUNUMERODETELEFONO" target="_blank">
                     <i class="fab fa-whatsapp"></i>
                 </a>
-    
+
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
                     aria-label="Toggle navigation">
@@ -244,6 +248,7 @@
 
                 <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
                     aria-labelledby="offcanvasDarkNavbarLabel">
+
                     <div class="offcanvas-header">
                         <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Ancie pasteleria</h5>
                         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
@@ -271,7 +276,7 @@
                 </div>
             </div>
         </nav>
-    
+
     </footer>
 
 

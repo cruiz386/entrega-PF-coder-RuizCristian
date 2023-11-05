@@ -62,18 +62,19 @@
 
         <section class="contenedor-grid-productos py-5">
 
+            <!-- CARD TELEFONO -->
             <div class="card-productos producto-uno">
                 <p class="titulo-producto">Telefono</p>
                 <p class="productos-home rounded-circle titulo-contacto"> 351-5123456</p>
-
             </div>
 
+            <!-- CARD EMAIL -->
             <div class="card-productos producto-dos">
                 <p class="titulo-producto">Email</p>
                 <p class="productos-home rounded-circle titulo-contacto"> anice@pasteleria.com.ar</p>
-
             </div>
 
+            <!-- CARD WHATSAPP -->
             <div class="card-productos producto-tres">
                 <p class="titulo-producto">Whatsapp</p>
                 <a href="https://api.whatsapp.com/send?phone=TUNUMERODETELEFONO" target="_blank">
@@ -81,52 +82,54 @@
                 </a>
             </div>
 
+            <!-- CARD FACEBOOK -->
             <div class="card-productos producto-cuatro">
                 <p class="titulo-producto">Facebook</p>
                 <a href="https://www.facebook.com/tupagina" target="_blank">
                     <i class="fab fa-facebook"></i>
                 </a>
-
             </div>
 
         </section>
 
 
-
         <!-- FORMULARIO -->
         <section class="container-fluid text-center d-flex justify-content-around">
 
-            <div class="row my-5">
+            <article class="row my-5">
 
                 <div
                     class="col-sm-12 col-md-12 col-lg-12 contenedor-consulta d-flex justify-content-space-around flex-column flex-wrap align-items-center">
                     <h2 class="contact-subtitles">Contanos que necesitas:</h2>
                     <form action="procesar.php" method="POST" class="form-pagina">
+
                         <div class="form-group">
-                            <label for="nombre">Nombre:</label>
-                            <input type="text" class="form-control" id="nombre" name="nombre" maxlength="50" required>
+                            <label for="nombre" class="text-form">Nombre:</label>
+                            <input type="text" placeholder="Decinos tu nombre" class="form-control" id="nombre" name="nombre" maxlength="50" required>
                         </div>
+                        
                         <div class="form-group">
-                            <label for="email">Email:</label>
-                            <input type="email" class="form-control" id="email" name="email" maxlength="50" required>
+                            <label for="email" class="text-form">Email:</label>
+                            <input type="email" placeholder="Dejanos tu eMail" class="form-control" id="email" name="email" maxlength="50" required>
                         </div>
+
                         <div class="form-group">
-                            <label for="nombre">Telefono:</label>
-                            <input type="number" class="form-control" id="Telefono" maxlength="10" name="Telefono"
+                            <label for="nombre" class="text-form">Telefono:</label>
+                            <input type="tel" pattern="[0-9]{1,10}" maxlength="10" placeholder="Telefono - ej:3516123546" class="form-control" id="Telefono" maxlength="10" name="Telefono"
                                 required>
                         </div>
 
                         <div class="form-group">
-                            <label for="mensaje">Contanos que necesitas:</label>
-                            <textarea class="form-control" id="mensaje" name="mensaje" rows="4" maxlength="500"
+                            <label for="mensaje" class="text-form">Contanos que necesitas:</label>
+                            <textarea class="form-control" id="mensaje" name="mensaje" rows="4" maxlength="500" placeholder="Contanos que necesitas y nos pondremos en contacto!"
                                 required></textarea>
                         </div>
+
                         <button type="submit" class="btn btn-secondary btn-lg">Enviar</button>
                     </form>
                 </div>
 
-
-            </div>
+            </article>
         </section>
 
     </main>
@@ -135,18 +138,18 @@
 
     <!-- FOOTER -->
     <footer class="footer">
-    
+
         <nav class="navbar navbar-dark bg-dark fixed-bottom">
             <div class="container-fluid pt-2 pb-2">
                 <a class="nav-link active text-light" aria-current="page" href="../index.html">Anice</a>
                 <a href="https://www.facebook.com/tupagina" target="_blank">
                     <i class="fab fa-facebook"></i>
                 </a>
-    
+
                 <a href="https://api.whatsapp.com/send?phone=TUNUMERODETELEFONO" target="_blank">
                     <i class="fab fa-whatsapp"></i>
                 </a>
-    
+
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
                     aria-label="Toggle navigation">
@@ -181,7 +184,7 @@
                 </div>
             </div>
         </nav>
-    
+
     </footer>
 
 
